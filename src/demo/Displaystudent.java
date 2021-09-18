@@ -28,7 +28,8 @@ public class Displaystudent {
 	         System.out.println("Congratulations," + 
 	              " JDBC connection is established successfully.\n");
 	      String query = "Select student_id,student_name from student";
-	//statement      
+	      
+	//statement
 	      Statement st = con.createStatement();
 
 	      // send and execute SQL query in Database software
