@@ -13,9 +13,9 @@ public class Displaystudent {
 	      Class.forName("com.mysql.cj.jdbc.Driver");
 
 	      // variables
-	      final String url = "jdbc:mysql:///sample_database";
-	      final String user = "root";
-	      final String password = "Fall+2021";
+	      final String url = "jdbc:mysql:///sys";
+	      final String user = "ssdi";
+	      final String password = "flight";
 
 	      // establish the connection
 	      Connection con = DriverManager.getConnection(url, user, password);
@@ -27,7 +27,7 @@ public class Displaystudent {
 	      } else
 	         System.out.println("Congratulations," + 
 	              " JDBC connection is established successfully.\n");
-	      String query = "Select student_id,student_name from student";
+	      String query = "select * from sys_config";
 	      
 	//statement
 	      Statement st = con.createStatement();
@@ -39,7 +39,7 @@ public class Displaystudent {
 	      boolean flag = false;
 	      while (rs.next()) {
 	         flag = true;
-	         System.out.println(rs.getInt(1) + " " + rs.getString(2));
+	         System.out.println(rs.getString(1) + " " + rs.getString(2));
 	      }
 
 	      if (flag == true) {
