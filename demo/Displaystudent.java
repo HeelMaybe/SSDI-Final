@@ -47,6 +47,8 @@ public class Displaystudent {
 	      } else {
 	         System.out.println("Record not found");
 	      }
+	      
+	      //adding lines
 
 	      // close JDBC objects
 	      rs.close();
