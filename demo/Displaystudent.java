@@ -9,7 +9,7 @@ public class Displaystudent {
 	   public static void main(String[] args) throws Exception {
 
 	      // register Oracle thin driver with DriverManager service
-	      // It is optional for JDBC4.x version
+	      // It is optional for JDBC4.x versio
 	      Class.forName("com.mysql.cj.jdbc.Driver");
 
 	      // variables
